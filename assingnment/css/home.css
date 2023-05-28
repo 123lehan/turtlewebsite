@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/turtle.jpg);
+    height: 80vh;
+    -webkit-animation-size: cover;
+     background-size: cover;
+     background-position: center center;
+     position: relative; 
+     animation: animate 1s linear infinite;
+}
+body{
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 28px;
+    
+}
+.nav-area li{
+    display: inline-block;
+    
+    
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    
+    
+    
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+    
+
+}
+.logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+    margin-left: -100px;
+    margin-top: 20px;
+    margin-top: 40px;
+    
+    
+}
+.welcome-text{
+     position: absolute;
+     width: 600px;
+     height: 300px;
+     margin: 20% 30%;
+     text-align: center;
+     
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+} 
+
+/* Drop Down */
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown .dropdown-cont {
+    display: none;
+    position: absolute; 
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-cont {
+    display: block;}
+.background{
+    background-color: lightblue;
+    width: 80;
+    height: 85vh;}
+
+    
+  .facts ol{
+    margin-left: 150px;
+    
+}
+.lehan img{
+    width: 500px; 
+}
+.paragraph ul{
+    margin-left: 150px;
+}
+.oshada img{
+    float: right;
+    flex: 1 1 31rem;
+    padding-top: 127px;
+    padding-right: 44px;
+
+}
+.bilal{
+    
+    height: 85vh;
+    width: 100%;
+    left: 15%;
+    top: 20%;
+    background-color: lightblue;
+    
+   
+}
+
+.paragraph{
+    padding-top: 80px;
+}
+.gihan{
+    align-content: center;
+    margin-left: 95px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.sheesh{
+    margin-left: 95px;
+    line-height: 24px;
+}
+.oneli{
+    margin-top: 70px;
+}
+
+.breeding {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    background-color: lightblue;
+    
+    
+}
+.content {
+    width: 50%;
+    height: auto;
+    line-height: 1.5rem;
+    border: 3px solid black;
+    margin-bottom: 40px;
+
+
+    
+}
+.photo{
+    width: 40%;
+}
+.photo img{
+     width: 70%;
+     margin-left: 80px;
+     
+}
+.heading{
+    text-align: center;
+    background-color: lightblue;
+    
+}
+
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #046281;
+    color: #CFFEF6;
+    padding: 25px 0 20px;
+    
+    font-size: 13px;
+    line-height: 12px;
+    
+    
+    
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 3%;
+    margin-bottom: -30px;
+    
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2),
+col:nth-child(3) {
+    flex-basis: 20%;
+}
+
+.logo {
+    width: 159px;
+    position: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    float: center;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #CFFEF6;
+    margin: 20px 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #CFFEF6;
+    font-size: 14px;
+}
+
+.col p {
+    font-size: 14px;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #CFFEF6;
+    margin-bottom: 50px;
+}
+
+form .far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #CFFEF6;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #CFFEF6;
+}
+
+.form button .fas {
+    font-size: 16px;
+    color: #CFFEF6;
+}
+
+
+
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #CFFEF6;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+    
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #203875;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 3s linear infinite;
+}
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@media (max-width:700px) {
+    footer {
+        bottom: unset;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%;
+    }
+    .nav-area{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        line-height: 30px;
+        padding-top: 40px;
+      }
+  
+      .logo img{
+        padding-bottom: 70px;
+        float: right;
+      }
+    .welcome-text h1{
+        margin-top: 150px;
+        padding-right: 1400px;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .welcome-text a{
+        margin-right: 400px;
+    }
+    .lehan img{
+        width: 300px;
+    }
+    .sheesh{
+        margin-right: 30px;
+        
+    }
+    .oneli{
+        padding-top: 1425px;
+       padding-left: 50px;
+       padding-bottom: 40px;
+       
+        
+    }
+    .oshada img{
+        padding-top: 1600px;
+        margin-right: 30px;
+    }
+    .heading h1{
+        padding-top: 3150px;
+    }
+    .facts ol{
+        margin-right: 70px;
+    }
+    .gihan{
+        margin-right: 40px;
+    }
+    .paragraph ul{
+        margin-right: 50px;
+    }
+    .content p{
+        padding-top: 150px;
+        float: left
+         
+    }
+    .content{
+        margin-right: 100px;
+    }
+    .photo img{
+        float: right;
+    }
+
+
+
+
+}
