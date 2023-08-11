@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body>
+  <nav class="buytickets">
+    <center>
+      <p class="main">BUY TICKETS</p>
+    </center>
+  </nav>
+
+  <p class="nav">Want to visit the hikkaduwa turtle Hatchery? Come Buy Tickets</p>
+  <br>
+  <br>
+
+  <div class="calendar">
+    <div class="month-nav">
+      <button id="prevMonth">Previous</button>
+      <div class="month" id="month"></div>
+      <button id="nextMonth">Next</button>
+    </div>
+    <div class="weekdays">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+    <div class="days" id="days"></div>
+  </div>
+  <br>
+
+
+
+  <h1>
+    <center>Pick the number of guests that will be visiting</center>
+  </h1>
+  <br>
+  <br>
+  <div class="prices">
+
+    <center>
+      <p>Sri Lankan Adult(Above 15yrs)
+
+
+        <input type="button" id="Increase1" value="+" onClick="getAdditon(1)"><input type="text" id="Showcount1"
+          value="0" /><input type="button" id="decrease" value="-" onclick="getsub(6)">
+      </p>
+    </center>
+    <center>
+      <p>Sri Lankan Child(Above 5 to 14yrs) <input type="button" id="Increase1" value="+"
+          onclick="getAdditon(2)" /><input type="text" id="Showcount2" value="0" /> <input type="button" id="decrease"
+          value="-" onclick="getsub(7)"> </p>
+    </center>
+    <center>
+      <p>Foreign Adult(Above 15yrs) <input type="button" id="Increase1" value="+" onclick="getAdditon(3)"><input
+          type="text" id="Showcount3" value="0" /> <input type="button" id="decrease" value="-" onclick="getsub(8)">
+      </p>
+    </center>
+    <center>
+      <p>Foreign Child(Above 5 to 14yrs) <input type="button" id="Increase1" value="+" onclick="getAdditon(4)"><input
+          type="text" id="Showcount4" value="0" /> <input type="button" id="decrease" value="-" onclick="getsub(9)">
+      </p>
+    </center>
+    <center>
+      <p>Infant(Under 4yrs) <input type="button" id="Increase1" value="+" onclick="getAdditon(5)"><input type="text"
+          id="Showcount5" value="0" /> <input type="button" id="decrease" value="-" onclick="getsub(10)">
+      </p>
+    </center>
+  </div>
+  <br>
+  <br>
+  <center>
+    <h1>Pick the time slot for your visit</h1>
+  </center>
+  <br>
+  <p class="time">The Hikkaduwa Turtle Hatchery will open at 07.00 am to 6.00pm everyday for the visitors. Whole day has
+    been divided to 1 hour based time slots.Come visit us and have a very nice day with us.</p>
+  <br>
+
+  <table>
+    <tr>
+      <th>Guest type</th>
+      <th>Normal hour charge</th>
+      <th>Peak hour charge</th>
+    </tr>
+    <tr>
+      <td>Foreign adult</td>
+      <td>10</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Foreign child</td>
+      <td>5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Sl adult</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Sl child</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Infant</td>
+      <td>Free</td>
+      <td>Free</td>
+    </tr>
+
+
+
+  </table>
+  <br>
+  <br>
+
+  <div class="dropdown">
+    <button class="dropbtn">Click the above button in order to view the time slots</button>
+    <div class="dropdown-content">
+      <button id="lbl1" onclick="time1()">07.00 am - 08.00 am</button>
+      <button id="lbl2" onclick="time2()">08.00 am - 09.00 am</button>
+      <button id="lbl222" onclick="time3()">09.00 am - 10.00 am</button>
+      <button id="lbl24" onclick="time22()">07.00 am - 09.00 am</button>
+      <button id="lbl23" onclick="time223()">07.00 am - 10.00 am</button>
+     
+      <button id="lbl3" onclick="peak(),time4()">10.00 am - 11.00 am (Peak)</button>
+      <button id="lbl39" onclick="peak(),time5()">11.00 am - 12.00 pm (Peak)</button>
+      <button id="lbl41" onclick="time67()" >10.00 am - 12.00 pm (Peak)</button>
+      <button id="lbl4" onclick="peak(),time6()" >12.00 pm - 01.00 pm (Peak)</button>
+      
+      <button id="lbl411" onclick="time671()" >10.00 am - 01.00 pm (Peak)</button>
+
+      <button id="lbl5" onclick="time7()">01.00 pm - 02.00 pm</button>
+      <button id="lbl6" onclick="time8()">02.00 pm - 03.00 pm</button>
+      <button id="lbl61" onclick="time81()">01.00 pm - 03.00 pm</button>
+      <button id="lbl7"  onclick="peak(),time9()" >03.00 pm - 04.00 pm (Peak)</button>
+      
+      <button id="lbl71"  onclick="peak(),time10()">04.00 pm - 05.00 pm (Peak)</button>
+      <button id="lbli" onclick="time100()">03.00 pm - 05.00 pm (Peak)</button>
+      <button id="lbl8"onclick="peak(),time11()">05.00 pm - 06.00 pm (Peak)</button>
+      <button id="lbl7110"  onclick="time1000()">04.00 pm - 06.00 pm (Peak)</button>
+
+      
+
+    </div>
+  </div>
+
+  <div class="oop">
+    <div class="nextpage1">
+      <br>
+        <button class="stylishbutton" onclick="redirecttopage()">Continue with purchase</button>
+   
+    </div>
+  </div>
+  
+  <div class="summary2">
+    <table class="summarytable">
+      <br>
+      <br>
+      <tr>
+        <th>Date</th>
+        <th id="date"></th>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Time</td>
+        <td id="tableTime"></td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Tickets</td>
+        <td style="font-weight: bold;">Charges</td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">SL Adults (one hour)</td>
+        <td id="slA"></td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">SL child (one hour)</td>
+        <td id="slC"></td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Foreigner Adult (one hour)</td>
+        <td id="fA"></td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Foreigner Child (one hour)</td>
+        <td id="fC"></td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Infant (one hour)</td>
+        <td id="iN"></td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Total payables</td>
+        <td id="total"></td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </table>
+  </div>
+  
+
+
+
+
+
+
+<script src="js/booking.js"></script>
+</body>
+
+
+ 
+  
+ 
+  
+
+
+</html>

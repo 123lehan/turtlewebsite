@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Payment Form</title>
+  <link rel="stylesheet" href="css/payment.css">
+ 
+</head>
+<body>
+  <nav class="buytickets">
+    <center>
+      <p class="main">BUY TICKETS</p>
+    </center>
+  </nav>
+
+  <p class="nav">Want to visit the hikkaduwa turtle Hatchery? Come Buy Tickets</p>
+
+  <br>
+  <br>
+  
+  <div class="h">
+  <div class="body3">
+  <div class="payment-form">
+    <h2>Secure Payment</h2>
+    <form action="#" method="post" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">Name on Card</label>
+        <input type="text" id="namecard" name="name" required oninput="validateName()">
+        <span id="nameError" class="error"></span>
+      </div>
+      <div class="form-group">
+        <label for="card-number">Card Number</label>
+        <input type="number" id="card-number1" name="card-number" required oninput="validateCardNumber()">
+        <span id="cardNumberError" class="error"></span>
+      </div>
+      <div class="card-info">
+        <div class="form-group">
+          <label for="expiry">Expiry Date</label>
+          <input type="text" id="expiry2" name="expiry" placeholder="MM/YY" required oninput="validateExpiry()">
+          <span id="expiryError" class="error"></span>
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="number" id="cvv3" name="cvv" required oninput="validateCVV()">
+          <span id="cvvError" class="error"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" name="amount" required>
+      </div>
+      <button class="payment-button" type="submit">If the fields are empty click this it will show an error and Click the purchase button below to move to the next page</button>
+    </form>
+  </div>
+</div>
+<div class="oop">
+  <div class="nextpage1">
+    <br>
+      <button class="stylishbutton" onclick="redirecttopage2()">Continue with purchase</button>
+ 
+  </div>
+</div>
+
+<div class="summary2">
+  <table class="summarytable">
+    <tr>
+      <th>Date</th>
+      <th id="date"></th>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Time</td>
+      <td id="tableTime"></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Tickets</td>
+      <td style="font-weight: bold;">Charges</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">SL Adults</td>
+      <td id="slA"></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">SL child</td>
+      <td id="slC"></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Foreigner Adult</td>
+      <td id="fA"></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Foreigner Child</td>
+      <td id="fC"></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Infant</td>
+      <td id="iN"></td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Total payables</td>
+      <td id="total"></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td id="email1"></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td id="gender2"></td>
+    </tr>
+    <tr>
+      <td>Phone Number</td>
+      <td id="phone number"></td>
+    </tr>
+  </table>
+</div>
+
+
+</div>
+</body>
+
+  <script src="js/payment.js"></script> 
+
+</html>

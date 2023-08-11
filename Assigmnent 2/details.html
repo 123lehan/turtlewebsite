@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="css/details.css">
+
+    <!-- Include CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
+
+    <!-- Include JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+
+</head>
+<body>
+
+    <nav class="buytickets">
+       <center> <p class="main">BUY TICKETS</p></center>
+     </nav> 
+
+     <p class="nav">Want to visit the hikkaduwa turtle Hatchery? Come Buy Tickets</p>
+
+     <br>
+     <br>
+
+     <h1>
+        <center>Enter your details</center>
+     </h1>
+      
+     <div class="body">
+
+     <div class="container1">
+        <form action="" method="" onsubmit="return validateForm()">
+            <h2>Registration</h2>
+            <div class="content">
+                <div class="input-box">  
+                    <label for="name">Full Name</label>
+                     <input type="text" id="namefull" required oninput="fulldtails()">
+                     <div id="namefullError" class="error"></div>
+                     
+                </div>
+                <div class="input-box">
+                    <label for="name">Username</label>
+                     <input type="text" id="nameuser" required oninput="username()">
+                     <div id="nameuserError" class="error"></div>
+                     
+                </div>
+                <div class="input-box">
+                    <label for="name">Email</label>
+                     <input type="text" id="email" required oninput="emai()">
+                     <div id="emailerror" class="error"></div>
+                     
+                </div>
+                <div class="input-box">
+                    <label for="name">Confirm Email</label>
+                     <input type="text" id="emailconfirm" required oninput="confirmemail()">
+                     <div id="emailConfirmError" class="error"></div>
+                     
+                </div>
+                
+                <div class="input-box">
+                    <label for="name">Phone Number</label>
+           
+                     <input type="tel" id="phonenumber" required oninput="phonrnumber()">
+
+                     <div id="phoneNumberError" class="error"></div>
+                     
+                </div>
+             
+                <div class="input-box">
+                    <label for="name">password</label>
+                     <input type="text" id="password"required oninput="validatePassword()">
+                     <div id="passwordError" class="error"></div>
+                     
+                </div>
+                <div class="input-box">
+                    <label for="name">confirm password</label>
+                     <input type="text" id="confirmpassword">
+                     
+                </div>
+
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male" onclick="male4()">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender"id="female" onclick="female4()">
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" id="other" onclick="other4()">  
+                    <label for="gender">Other</label>
+                </div>
+
+             </div>
+             <div class="alert">
+                <p>By clicking Sign Up,you agree to our <a href="#">Terms</a>,<a href="#">Privacy ,Policy</a> and Cookies.You may receive SMS 
+                notifications from us and can opt at any time.  </p>
+             </div>
+             <div class="button-container">
+                <button type="submit">If the fields are empty click this it will show an error and Click the purchase button below to move to the next page</button>
+             </div>
+        </form>
+
+     </div>
+    </div>
+    <div class="oop">
+      <div class="nextpage1">
+        <br>
+          <button class="stylishbutton" onclick="redirecttopage1()">Continue with purchase</button>
+     
+      </div>
+    </div>
+    <div class="summary2">
+      <table class="summarytable">
+        <tr>
+          <th>Date</th>
+          <th id="date"></th>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Time</td>
+          <td id="tableTime"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Tickets</td>
+          <td style="font-weight: bold;">Charges</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">SL Adults</td>
+          <td id="slA"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">SL child</td>
+          <td id="slC"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Foreigner Adult</td>
+          <td id="fA"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Foreigner Child</td>
+          <td id="fC"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Infant</td>
+          <td id="iN"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Total payables</td>
+          <td id="total"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Email</td>
+          <td id="email1"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Gender</td>
+          <td id="gender2"></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Phone Number</td>
+          <td id="phone number"></td>
+        </tr>
+      </table>
+    </div>
+
+   
+
+
+    
+    
+    <script src="js/details.js"></script>
+
+    <script>
+      const input = document.querySelector("#phonenumber");
+      const iti = window.intlTelInput(input, {
+        preferredCountries: ["us", "gb"], // Specify preferred countries if needed
+        separateDialCode: true,
+      });
+    
+      input.addEventListener("blur", function () {
+        if (input.value.trim()) {
+          const selectedCountryData = iti.getSelectedCountryData();
+          console.log("Selected Country Code:", selectedCountryData.dialCode);
+          console.log("Phone Number:", iti.getNumber());
+        }
+      });
+    </script>
+
+</body>
+
+
+  
+    
+
+    
+    
+
+
+    
+
+
+
+
+    
+
+
+
+</html>
