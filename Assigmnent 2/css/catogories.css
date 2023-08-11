@@ -1,0 +1,507 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+.wrapper{
+   width: 1170px;
+   margin: auto;
+
+}
+header{
+   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) , url(../images/78.jpg);
+   height: 80vh;
+   -webkit-animation-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative; 
+    animation: animate 1s linear infinite;
+}
+.nav-area{
+   float: right;
+   list-style: none;
+   margin-top: 28px;
+}
+.nav-area li{
+   display: inline-block;
+   
+}
+.nav-area li a{
+   color: #fff;
+   text-decoration: none;
+   padding: 5px 20px;
+   font-weight: bold;
+   font-size: 14px;
+   
+   
+}
+.nav-area li a:hover{
+   background: #fff;
+   color: #333;
+   
+
+}
+.logo img{
+   width: 100px;
+   float: left;
+   height: auto;
+   margin-left: -100px;
+   margin-top: 40px;
+   
+   
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+    
+}
+.welcome-text h1{
+   text-align: center;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 60px;
+}
+.welcome-text a{
+   border: 1px solid #fff;
+   padding: 10px 25px;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 14px;
+   margin-top: 20px;
+   display: inline-block;
+   color: #fff;
+}
+.welcome-text a:hover{
+   background: #fff;
+   color: #333;
+} 
+
+/* Drop Down */
+
+.dropdown {
+   display: inline-block;
+}
+
+.dropdown .dropdown-cont {
+   display: none;
+   position: absolute; 
+   padding: 10px;
+}
+
+.dropdown:hover .dropdown-cont {
+   display: block;}
+ img{
+    max-width: 100%;
+    max-height: 100%;
+}
+ .ssc{
+    width: 600px;
+    height: 300px;
+   
+ }   
+ .anaya{
+    display: flex;
+ }
+ .map iframe {
+    height: 300px;
+    float: left;
+    margin-left: 80px;
+
+ }
+ .ssc img{
+    align-items: center;
+    margin-left: 90px;
+ }
+ .green p{
+    line-height: 20px;
+
+ }
+ .green{
+    background-color: lightblue;
+ }
+ .olive h1{
+            text-align: center;
+ }
+ .omg img{
+    margin-left: 70px;
+    height: 300px;
+    
+ }
+ .html iframe{
+    height: 300px;
+    margin-left: 160px;
+ }
+
+ .phone{
+    display: flex;
+ }  
+ .olive h1{
+    margin-right: 10px;
+ }
+ .olive p{
+    line-height: 20px;
+ }
+ .olive{
+    background-color: lightblue;
+ }
+ .yass img{
+   width: 450px;
+   height: 300px;
+   margin-left: 70px;
+ }
+ .main{
+   display: flex;
+ }
+ .hass{
+   margin-left: 210px;
+   
+ }
+ .hass iframe{
+   height: 300px;
+ }
+ .pc{
+   background-color: lightblue;
+ }
+ .pc p{
+   line-height: 20px;
+ }
+.monday img{
+   width: 450px;
+   height: 300px;
+   margin-left: 50px;
+}
+.band{
+   display: flex;
+}
+ .Tuesday iframe{
+   margin-left: 250px;
+   height: 300px;
+ }   
+ .hotel p{
+   line-height: 20px;
+   
+ }
+ .hotel{
+   background-color: lightblue;
+ }
+ .wednesday img{
+   width: 450px;
+   height: 300px;
+   margin-left: 50px;
+ }
+ .apple iframe{
+   height: 300px;
+   padding-left: 262px;
+ }
+ .both{
+   display: flex;
+
+ }
+ .loger{
+   background-color: lightblue;
+ }
+ .loger p{
+   line-height: 20px;
+ }
+ .table{
+   width: 100%;
+   border-collapse: collapse;
+   
+   
+
+ }
+ th,
+ td {
+   border: 2px solid black;
+   padding: 10px;
+ }
+ table{
+   background-color: lightblue;
+   
+   }
+   
+ .j{
+   background-color: lightblue; 
+   
+ }
+ body{
+   background-color: #efefef;
+    font-family: sans-serif;
+ }
+ footer {
+   width: 100%;
+   position: relative;
+   bottom: 0;
+   background: #046281;
+   color: #CFFEF6;
+   padding: 25px 0 20px;
+   
+   font-size: 13px;
+   line-height: 12px;
+   
+   
+   
+}
+
+.row {
+   width: 85%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+   height: 3%;
+   margin-bottom: -30px;
+   
+}
+
+.col {
+   flex-basis: 25%;
+   padding: 10px;
+}
+
+.col:nth-child(2),
+col:nth-child(3) {
+   flex-basis: 20%;
+}
+
+.logo {
+   width: 159px;
+   position: center;
+   padding: 10px;
+   margin-bottom: 30px;
+   float: center;
+}
+
+.col h3 {
+   width: fit-content;
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.email-id {
+   width: fit-content;
+   border-bottom: 1px solid #CFFEF6;
+   margin: 20px 0;
+}
+
+footer ul li {
+   list-style: none;
+   margin-bottom: 12px;
+}
+
+footer ul li a {
+   text-decoration: none;
+   color: #CFFEF6;
+   font-size: 14px;
+}
+
+.col p {
+   font-size: 14px;
+}
+
+form {
+   padding-bottom: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #CFFEF6;
+   margin-bottom: 50px;
+}
+
+form .far {
+   font-size: 18px;
+   margin-right: 10px;
+}
+
+form input {
+   width: 100%;
+   background: transparent;
+   color: #CFFEF6;
+   border: 0;
+   outline: none;
+}
+
+form button {
+   background: transparent;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+   color: #CFFEF6;
+}
+
+.form button .fas {
+   font-size: 16px;
+   color: #CFFEF6;
+}
+
+
+
+
+hr {
+   width: 90%;
+   border: 0;
+   border-bottom: 1px solid #CFFEF6;
+   margin: 20px auto;
+}
+
+.copyright {
+   text-align: center;
+   
+}
+
+.underline {
+   width: 100%;
+   height: 5px;
+   background: #203875;
+   border-radius: 3px;
+   position: absolute;
+   top: 25px;
+   left: 0;
+   overflow: hidden;
+}
+
+.underline span {
+   width: 15px;
+   height: 100%;
+   background: #fff;
+   border-radius: 3px;
+   position: absolute;
+   top: 0;
+   left: 10px;
+   animation: moving 3s linear infinite;
+}
+@keyframes moving {
+   0% {
+       left: -20px;
+   }
+
+   100% {
+       left: 100%;
+   }
+}
+
+@media (max-width:700px) {
+   footer {
+       bottom: unset;
+   }
+
+   .col {
+       flex-basis: 100%;
+   }
+
+   .col:nth-child(2),
+   .col:nth-child(3) {
+       flex-basis: 100%;
+   }
+   .nav-area{
+      display: flex;
+      flex-direction: column;
+      float: left;
+      line-height: 30px;
+      padding-top: 40px;
+    }
+
+    .logo img{
+      padding-bottom: 70px;
+      float: right;
+    }
+  .welcome-text h1{
+      margin-top: 150px;
+      padding-right: 1400px;
+      font-size: 30px;
+      margin-left: 20px;
+  }
+  .welcome-text a{
+      margin-right: 400px;
+}
+
+   .anaya{
+      display: flex;
+      flex-direction: column;
+   }
+   .ssc img{
+      width: 230px;
+      height: 200px;
+      padding-right: 100px;
+   }
+   .green h1{
+      margin-left: 50px;
+      text-align: justify;
+   }
+   .map iframe{
+      width: 230px;
+      height: 200px;
+      padding-right: 100px; 
+   }
+   .omg img{
+      width: 230px;
+      height: 200px;
+      padding-right: 100px;
+      padding-bottom: 10px;
+   }
+   .html iframe{
+      width: 180px;
+      height: 200px;
+      padding-right: 150px; 
+
+   }
+   .phone{
+      display: flex;
+      flex-direction: column;
+   }
+   .yass img{
+      width: 230px;
+      height: 200px;
+      padding-right: 100px;
+      
+
+   }
+   .hass iframe{
+      width: 160px;
+      height: 200px;
+      padding-right: 20px;
+   
+   }
+   .main{
+      display: flex;
+      flex-direction: column;
+   }
+   .monday img{
+      width: 230px;
+      height: 200px;
+      padding-right: 100px;
+   }
+   .Tuesday iframe{
+      width: 110px;
+      height: 200px;
+      padding-right: 20px;
+   
+   }
+   .band{
+      display: flex;
+      flex-direction: column;
+   }
+   .wednesday img{
+      width: 230px;
+      height: 200px;
+      padding-right: 100px;
+   }
+   .apple iframe{
+      width: 110px;
+      height: 200px;
+      padding-left: 180px;
+   }
+   .both{
+      display: flex;
+      flex-direction: column;
+   }
+   table img {
+      height: 120px;
+   }
+      
+   }
+
+

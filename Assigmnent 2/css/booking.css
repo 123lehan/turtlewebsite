@@ -1,0 +1,451 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;  
+    font: 1em sans-serif;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));;
+ 
+}
+
+.main{
+    font-family: sans-serif;
+    padding-top: 70px;
+    font-size: xx-large;
+    font-style: italic;
+    color: aquamarine;
+}
+
+.buytickets{
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));;
+    height: 155px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/script.jpeg);
+    
+
+}
+.nav{
+    padding-left: 30px;
+    font: 1em sans-serif;
+    padding-top: 20px;
+    background-color: darkgreen;
+    height: 35px;
+    font-style: italic;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calendar {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px;
+    height: 500px;
+    line-height: 50px;
+    background-color: white;
+    
+  }
+  
+  .month {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+  }
+  
+  .day {
+    cursor: pointer;
+  }
+  
+  .day:hover {
+    background-color: #f0f0f0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calendar {
+    width: 500px; /* Adjust the width of the calendar */
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px;
+  }
+  
+  .month-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .month-nav button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .month-nav button:hover {
+    background-color: #ccc;
+  }
+  
+  .month {
+    font-size: 24px; /* Increase the font size of the month */
+  }
+  
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+  }
+  
+  .day {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .day:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  #Increase1{
+    border-radius: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  p{
+    font-weight: bolder;
+    font-size: x-large;
+    
+  }
+  #decrease{
+    border-radius: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    
+  }
+  .prices{
+    line-height: 120px;
+    box-sizing: content-box;
+    width: 700px;
+    height: 600px;
+    margin-left: 420px;
+    border: 1px solid #ccc;
+    background-color: white;
+    
+    
+
+  }
+  .time{
+    font-family: Arial, sans-serif;
+    font: 1em sans-serif;
+    font-size: x-large;
+    margin-left: 55px;
+    margin-right: 55px;
+   
+ 
+  }
+  table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    
+   
+  }
+ td,th{
+  border: 1px solid #dddddd;
+  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));;
+  text-align: left;
+  padding: 8px;
+  height: 50px;
+ }
+ .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-left: 540px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 640px;
+  
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content label:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+ #Showcount1{
+      font-size: x-large;
+      width: 30px;
+      border: none;
+      text-align: center;
+      font-weight: bold;
+ }
+
+ #Showcount2{
+  font-size: x-large;
+  width: 30px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+#Showcount3{
+  font-size: x-large;
+  width: 30px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+#Showcount4{
+  font-size: x-large;
+  width: 30px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+#Showcount5{
+  font-size: x-large;
+  width: 30px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+#lbl1{
+  width: 240px;
+  
+}
+#lbl2{
+  width: 240px;
+  
+}
+
+#lbl4{
+  width: 240px;
+  
+
+}
+#lbl5{
+  width: 240px;
+  
+}
+#lbl6{
+  width: 240px;
+  
+}
+#lbl7{
+  width: 240px;
+  
+}
+#lbl24{
+  width: 240px;
+}
+
+#lbl23{
+  width: 240px;
+}
+#lbl41{
+  width: 240px;
+}
+#lbl411{
+  width: 240px;
+}
+#lbl61{
+  width: 240px;
+}
+
+#lbl7110{
+  width: 240px;
+}
+#lbli{
+  width: 240px;
+}
+
+
+
+
+/* Add this CSS to ensure borders and lines in the table */
+.summarytable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.summarytable th,
+.summarytable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.summarytable th {
+  background-color: #f2f2f2;
+}
+
+/* Rest of your CSS styles for .summary2 */
+.summary2 {
+  width: 50%;
+  margin-left: 40%;
+}
+#lbl222{
+  width: 240px;
+}
+#lbl3{
+  width: 240px;
+}
+#lbl39{
+  width: 240px;
+}
+#lbl71{
+  width: 240px;
+}
+
+#lbl8{
+  width: 240px;
+}
+
+ 
+
+.nextpage1 {
+  text-align: center;
+}
+
+.stylishbutton {
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff; /* Replace with your preferred background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stylishbutton:hover {
+  background-color: #0056b3; /* Replace with your preferred hover background color */
+}
+
+
+/* Original CSS code up to .summary2 */
+
+/* Add this media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .calendar {
+    width: 100%;
+    margin-right: 40px;
+    padding: 0;
+  }
+
+  .prices {
+    
+    padding: 10px;
+    
+    margin-left: 0px;
+    width: 100%;
+    margin-right: 40px;
+    padding: 0;
+    height: 1100px;
+  }
+
+  .dropdown {
+    float: left;
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .summary2{
+    margin-top: 250px;
+  }
+  .dropdown-content {
+
+    margin-left: 0px;
+  }
+
+  .dropdown-content button {
+    margin-left: 0px;
+    padding: 0;
+    
+  }
+  .dropbtn {
+    margin-left: 0;
+  }
+  .dropdown-content{
+      margin-left: 40px;
+  }
+    
+  }
+
+ 
+
+
+
+  /* Add more responsive styles as needed for other elements */
+
+
+
+

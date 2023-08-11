@@ -1,0 +1,131 @@
+body{
+    font-family: sans-serif;  
+    font: 1em sans-serif;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));;
+ 
+}
+
+.main{
+    font-family: sans-serif;
+    padding-top: 70px;
+    font-size: xx-large;
+    font-style: italic;
+    color: aquamarine;
+}
+
+.buytickets{
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));;
+    height: 155px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/script.jpeg);
+    
+
+}
+.nav{
+    padding-left: 30px;
+    font: 1em sans-serif;
+    padding-top: 20px;
+    background-color: darkgreen;
+    height: 35px;
+    font-style: italic;
+}
+        .body6 {
+            font-family: Arial, sans-serif;
+            
+            color: #333;
+            margin: 0;
+            padding: 0;
+            width: 500px;
+          
+            margin-left: 500px;
+            margin-top: 120px;
+        }
+
+        .confirmation-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 50px;
+            width: 500px;
+            
+        }
+
+        .confirmation-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .confirmation-message {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        
+
+        .summarytable {
+            width: 100%;
+            border-collapse: collapse;
+          }
+          
+          .summarytable th,
+          .summarytable td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+          }
+          
+          .summarytable th {
+            background-color: #f2f2f2;
+          }
+          
+          /* Rest of your CSS styles for .summary2 */
+          .summary2 {
+            width: 50%;
+            margin-left: 40%;
+            margin-top: 450px;
+            margin-left: 1px;
+            margin-right: 40px;
+           
+            
+          }
+          .flex{
+            display: flex;
+          }
+
+          @media (max-width: 768px) {
+               
+                .body6 {
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    width: 0px;
+                    height :0px;
+                  
+                }
+                .confirmation-container {
+                    width: 350px;
+                    padding: 0px;
+                   align-self: center;
+                   margin-left: 0px;
+
+                    
+                }
+                .confirmation-message{
+                    margin-bottom: 0px;
+                    height: 150px;
+                }
+                .summary2{
+                    margin-top: 300px;
+                  
+                    margin-left: 0px;
+                    float: right;
+                }
+          }
+
+
+          
